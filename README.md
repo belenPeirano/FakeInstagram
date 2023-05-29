@@ -23,3 +23,6 @@
 - Chat
 
 ## Teams
+1. Profile and Chats - Sebastian and Matias
+2. Discover and Navbar - Belén and Joel
+3. Search - Juan Manuel and Pablo
