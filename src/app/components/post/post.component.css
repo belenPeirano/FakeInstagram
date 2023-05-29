@@ -1,0 +1,17 @@
+.photo {
+    display: unset;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.user-data {
+    margin-top: 1em;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.user-photo {
+    border-radius: 5rem;
+}
