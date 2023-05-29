@@ -1,1 +1,12 @@
-<p>post works!</p>
+<section class="photo">
+    <img [src]="post.photoPath" width="400" height="400">
+
+    <section class="user-data">
+        <img class="user-photo" [src]="post.userPhotoPath" width="80" height="80">
+
+        <section style="margin-left: 1em">
+            <h4>{{post.userFullName}}</h4>
+            <p style="margin-top: 1em">@{{post.username}}</p>
+        </section>
+    </section>
+</section>
