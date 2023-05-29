@@ -7,7 +7,6 @@ import { NavbarComponent } from './Pages/navbar/navbar.component';
 import { ButtonComponent } from './components/button/button.component';
 import { DiscoverComponent } from './Pages/discover/discover.component';
 import { PhotoRollComponent } from './components/photo-roll/photo-roll.component';
-import { ImageComponent } from './components/image/image.component';
 import { PostComponent } from './components/post/post.component';
 import { ShowPostComponent } from './components/show-post/show-post.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
@@ -26,7 +25,6 @@ import { SearchComponent } from './Pages/search/search.component';
     ButtonComponent,
     DiscoverComponent,
     PhotoRollComponent,
-    ImageComponent,
     PostComponent,
     ShowPostComponent,
     SearchBarComponent,
