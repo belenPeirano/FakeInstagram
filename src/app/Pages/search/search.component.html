@@ -1,16 +1,13 @@
 <div class="search-container">
   <h1>Search</h1>
-  <input
-    type="text"
-    [(ngModel)]="searchTerm"
-    placeholder="Search all photos"
-  />
-  <h2>ALL RESULTS</h2>
+  <input type="text" [(ngModel)]="searchTerm" placeholder="Search all photos" />
+  <h2 *ngIf="searchTerm; else elseContent">RESULTS FOR: {{ searchTerm }}</h2>
+  <ng-template #elseContent><h2>ALL RESULTS</h2></ng-template>
   <div class="photo-grid">
     <ng-container *ngFor="let user of filteredUsersList">
       <div *ngFor="let post of user.postsList" class="photo">
         <a href="/{{ user.username }}">
-            <img [src]="post.photoPath" alt="" width="320px" height="320px"/>
+          <img [src]="post.photoPath" alt="" width="320px" height="320px" />
         </a>
       </div>
     </ng-container>

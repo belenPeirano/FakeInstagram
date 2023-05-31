@@ -11,7 +11,11 @@
 }
 
 .photo {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+img {
+  object-fit: cover;
 }
 
 h1 {
