@@ -17,6 +17,7 @@ import { ChatComponent } from './components/chat/chat.component';
 import { ChatsComponent } from './Pages/chats/chats.component';
 import { ProfileComponent } from './Pages/profile/profile.component';
 import { SearchComponent } from './Pages/search/search.component';
+import { SliderComponent } from './components/slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { SearchComponent } from './Pages/search/search.component';
     ChatComponent,
     ChatsComponent,
     ProfileComponent,
-    SearchComponent
+    SearchComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,
