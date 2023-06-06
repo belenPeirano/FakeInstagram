@@ -1,6 +1,6 @@
-import { Component, inject, NgModule } from '@angular/core';
-import { User, Post } from 'src/app/Interfaces/post';
-import { UsersService } from 'src/app/services/users.service';
+import { Component, inject } from '@angular/core';
+import { Post } from 'src/app/Interfaces/post';
+import { PostService } from 'src/app/services/post.service';
 
 @Component({
   selector: 'app-search',
@@ -8,24 +8,22 @@ import { UsersService } from 'src/app/services/users.service';
   styleUrls: ['./search.component.css'],
 })
 export class SearchComponent {
-  usersList: User[] = [];
-  usersService: UsersService = inject(UsersService);
+  postList: Post[] = [];
+  postService: PostService = inject(PostService);
   searchTerm: string = '';
 
   constructor() {
-    this.usersList = this.usersService.getUsers();
+    this.postList = this.postService.getPosts();
   }
 
-  get filteredUsersList(): User[] {
-    if (this.searchTerm.trim() === '') return this.usersList;
+  get filteredPosts(): Post[] {
+    if (this.searchTerm.trim() === '') return this.postList;
     else {
       const lowerCaseSearchText = this.searchTerm.toLowerCase().trim();
-      return this.usersList.map((user) => {
-        const filteredPosts = user.postsList.filter((post) =>
+        const filteredPosts = this.postList.filter((post) =>
           post.tag.toLowerCase().includes(lowerCaseSearchText)
         );
-        return { ...user, postsList: filteredPosts };
-      });
+        return filteredPosts;
     }
   }
 }
