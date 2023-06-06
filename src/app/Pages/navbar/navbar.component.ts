@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
+  discover = "Discover";
+  search = "Search";
+  upload = "Upload Picture";
+  chat = "Chat";
+  profile = "Profile";
+  selected = "selected";
+  unselected = "unselected";
+  ImgDiscover = '../../assets/Icons/houseSelected.png';
+  ImgSearch = "../../assets/Icons/searchUnselected.png";
+  ImgUpload = "../../assets/Icons/uploadUnselected.png";
+  ImgChat = "../../assets/Icons/chatUnselected.png";
+  ImgProfile = "../../assets/Icons/profileUnselected.png";
 }

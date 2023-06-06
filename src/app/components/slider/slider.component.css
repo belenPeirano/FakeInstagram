@@ -1,0 +1,9 @@
+div.slider {
+  overflow: auto;
+  white-space: nowrap;
+  display: flex;
+}
+
+div.slider::-webkit-scrollbar {
+  display: none;
+}

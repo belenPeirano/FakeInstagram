@@ -18,6 +18,7 @@ import { ProfileComponent } from './Pages/profile/profile.component';
 import { SearchComponent } from './Pages/search/search.component';
 import { FormsModule } from '@angular/forms';
 import { NotFoundComponent } from './Pages/not-found/not-found.component';
+import { SliderComponent } from './components/slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { NotFoundComponent } from './Pages/not-found/not-found.component';
     ChatsComponent,
     ProfileComponent,
     SearchComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,
