@@ -9,7 +9,6 @@ import { DiscoverComponent } from './Pages/discover/discover.component';
 import { PhotoRollComponent } from './components/photo-roll/photo-roll.component';
 import { PostComponent } from './components/post/post.component';
 import { ShowPostComponent } from './components/show-post/show-post.component';
-import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { PostsGridComponent } from './components/posts-grid/posts-grid.component';
 import { UserComponent } from './components/user/user.component';
 import { ChatPreviewComponent } from './components/chat-preview/chat-preview.component';
@@ -17,6 +16,8 @@ import { ChatComponent } from './components/chat/chat.component';
 import { ChatsComponent } from './Pages/chats/chats.component';
 import { ProfileComponent } from './Pages/profile/profile.component';
 import { SearchComponent } from './Pages/search/search.component';
+import { FormsModule } from '@angular/forms';
+import { NotFoundComponent } from './Pages/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -27,18 +28,19 @@ import { SearchComponent } from './Pages/search/search.component';
     PhotoRollComponent,
     PostComponent,
     ShowPostComponent,
-    SearchBarComponent,
     PostsGridComponent,
     UserComponent,
     ChatPreviewComponent,
     ChatComponent,
     ChatsComponent,
     ProfileComponent,
-    SearchComponent
+    SearchComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto:wght@100&display=swap");
+
+.search-container {
+}
+
+.photo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.photo {
+  margin-bottom: 10px;
+}
+
+img {
+  object-fit: cover;
+}
+
+h1 {
+  font-family: "Comfortaa", normal;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 24px;
+}
+
+input {
+  border: 2px solid #000;
+  width: 99%;
+  background: #fff;
+  height: 50px;
+  margin-bottom: 32px;
+}
